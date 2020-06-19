@@ -43,7 +43,7 @@ RUN apt-get install -y libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-
 
 
 ## ADD code
-ADD /pysot/ /pysot/
+ADD /tracking/ /pysot/
 ENV PYTHONPATH="/pysot:$PYTHONPATH"
 WORKDIR /pysot
 RUN source activate pysot\
